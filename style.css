@@ -69,6 +69,7 @@ section div {
 section div h1 {
   font-size: 2.5rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 section div p {
