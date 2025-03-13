@@ -1,0 +1,119 @@
+body {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url(./img/background.jpg);
+  background-size: cover;
+  max-width: 1400px;
+  margin: 0 auto;
+  color: #2c3e50;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+header img {
+  width: 200px;
+  display: block;
+  max-width: 100%;
+  mix-blend-mode: multiply;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c3e50;
+  cursor: pointer;
+  padding: 10px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 50px;
+  max-width: 1200px;
+}
+
+section img {
+  height: 100%;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+section div {
+  text-align: center;
+}
+
+section div h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+section div p {
+  font-size: 1.2rem;
+  line-height: 1.3em;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  section div h1 {
+    font-size: 2rem;
+  }
+
+  section div p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+
+  section img {
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  header {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  header img {
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  header ul {
+    flex-direction: column;
+  }
+}
